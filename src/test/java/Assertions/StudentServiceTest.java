@@ -41,6 +41,35 @@ class StudentServiceTest {
 	}
 	
 	//############################################################################
+	//###   Juste POUR LE TEST DE COMMIT VERS GIT avec branch 0001    ############
+	//##############    assertTrue2  ###############################
+			
+
+			@Test
+			public void getStudentsTest2() {
+				
+				StudentService studentService = new StudentService();
+				List<Student> listOfStudents = studentService.getStudents();
+				Student s = new Student(1, "Hamza");
+				//listOfStudents.add(s);
+				boolean actualResult = listOfStudents.isEmpty();
+				
+				//assertTrue(actualResult);
+				
+				//assertTrue(()-> actualResult);
+				
+				//assertTrue(actualResult, "List of Student Must be Empty !");
+				
+				//assertTrue(()-> actualResult, "List of Student Must be Empty !");
+				
+				//assertTrue(actualResult,()-> "List of Student Must be Empty !");
+				
+				assertTrue(()-> actualResult,()-> "List of Student Must be Empty !");
+				
+			}
+		
+	
+	//############################################################################
 	//############################################################################
 	//##############################  assertFalse  ###############################
 	
