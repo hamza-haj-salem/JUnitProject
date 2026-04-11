@@ -23,7 +23,7 @@ public class CalculatorTest {
 	public void substractTest() {
 		Calculator calculator = new Calculator();
 		int subs = calculator.substract(2, 3);
-		assertEquals(5, subs);
+		assertEquals(-1, subs);
 	}
 
 	@DisplayName(" Test Multi of two numbers .. 😉​")
