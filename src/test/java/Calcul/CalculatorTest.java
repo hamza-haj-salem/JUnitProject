@@ -10,7 +10,7 @@ class CalculatorTest {
 	public void addTest() {
 		Calculator calculator = new Calculator();
 		int actualRes = calculator.add(2, 3);
-		assertEquals(6, actualRes);
+		assertEquals(5, actualRes);
 	}
 
 }

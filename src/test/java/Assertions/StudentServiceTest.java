@@ -207,7 +207,7 @@ class StudentServiceTest {
 				//},"This student exist. Student must be NOT found to test the exception");
 					
 					assertThrows(StudentNotFoundException.class, ()-> {studentService.
-						getStudentByName("Hamza");
+						getStudentByName("Hamzaa");
 				},()->"This student exist. Student must be NOT found to test the exception");
 					
 				}
