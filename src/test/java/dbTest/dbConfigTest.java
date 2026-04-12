@@ -14,6 +14,8 @@ import java.util.stream.Collectors;
 class dbConfigTest {
 
     Connection connection;
+    
+    
 
     @BeforeEach
     void setUp() throws Exception {
@@ -38,6 +40,8 @@ class dbConfigTest {
         // 3. Exécuter le script SQL
         System.out.println("🔵 [SETUP] Exécution du schema.sql...");
         Statement stmt = connection.createStatement();
+        // RESET propre
+        stmt.execute("DROP ALL OBJECTS");
         stmt.execute(sql);
 
         System.out.println("✅ [SETUP] schema.sql exécuté avec succès !");
