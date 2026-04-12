@@ -1,0 +1,8 @@
+Assertions\StudentServiceTest.class
+Calcul\CalculatorTest.class
+Assertions\AfterAllDemoTest.class
+Assertions\BeforeAllDemoTest.class
+Assertions\CalculatorTest.class
+Assertions\BeforeEachDemoTest.class
+Assertions\AfterEachDemoTest.class
+Assertions\DisabledCalculatorTest.class

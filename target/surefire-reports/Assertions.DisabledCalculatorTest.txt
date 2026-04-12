@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Assertions.DisabledCalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.015 s -- in Assertions.DisabledCalculatorTest
