@@ -19,5 +19,11 @@ pipeline {
                 bat 'mvn package'
             }
         }
+        
+        stage('SonarQube Analysis') {
+            steps {
+                bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic -Dsonar.host.url=http://localhost:9000 -Dsonar.login=TON_TOKEN'
+            }
+        }
     }
 }
