@@ -22,7 +22,7 @@ pipeline {
         
         stage('SonarQube Analysis') {
             steps {
-                bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic -Dsonar.host.url=http://localhost:9000 -Dsonar.login=TON_TOKEN'
+                bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_620aae6e85db7fc0b8d210e2f69fffec4a59ebf4'
             }
         }
     }
