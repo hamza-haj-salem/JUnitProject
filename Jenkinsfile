@@ -24,13 +24,16 @@ pipeline {
             steps {
                 bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_620aae6e85db7fc0b8d210e2f69fffec4a59ebf4'
             }
+        }  
+    }
+    
+     post {
+        success {
+            publishChecks name: 'Jenkins', conclusion: 'SUCCESS'
         }
-        
-        stage('Checkout') {
-   			steps {
-       			checkout scm
-    		}
-		}
+        failure {
+            publishChecks name: 'Jenkins', conclusion: 'FAILURE'
+        }
     }
     
 }
