@@ -26,6 +26,13 @@ pipeline {
             }
         }
         
+         post {
+        success {
+            publishChecks name: 'Jenkins', conclusion: 'SUCCESS'
+        }
+        failure {
+            publishChecks name: 'Jenkins', conclusion: 'FAILURE'
+        }
        
     }
     
