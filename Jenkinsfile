@@ -25,5 +25,22 @@ pipeline {
                 bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_620aae6e85db7fc0b8d210e2f69fffec4a59ebf4'
             }
         }
+        
+              
+        stage('SonarQube Analysis') {
+    steps {
+        withSonarQubeEnv('SonarLocal') {
+            bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic'
+        }
+    }
+}
+
+stage('Quality Gate') {
+    steps {
+        timeout(time: 2, unit: 'MINUTES') {
+            waitForQualityGate abortPipeline: true
+        }
+    }
+}
     }
 }
