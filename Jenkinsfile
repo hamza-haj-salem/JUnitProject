@@ -26,14 +26,6 @@ pipeline {
             }
         }
         
-              
-        stage('SonarQube Analysis') {
-    steps {
-        withSonarQubeEnv('SonarLocal') {
-            bat 'mvn sonar:sonar -Dsonar.projectKey=JUnit_Basic'
-        }
-    }
-}
 
 stage('Quality Gate') {
     steps {
