@@ -23,7 +23,7 @@ public class CalculatorTest {
 	public void substractTest() {
 		Calculator calculator = new Calculator();
 		int subs = calculator.substract(2, 3);
-		assertEquals(5, subs);
+		assertEquals(-1, subs);
 	}
 
 	@DisplayName(" Test Multi of two numbers .. 😉​")
@@ -31,7 +31,7 @@ public class CalculatorTest {
 	public void multiplyTest() {
 		Calculator calculator = new Calculator();
 		int multipl = calculator.multiply(2, 3);
-		assertEquals(5, multipl);
+		assertEquals(6, multipl);
 	}
 	
 	@DisplayName(" Test Divi of two numbers .. 😉​")
@@ -39,7 +39,7 @@ public class CalculatorTest {
 	public void divisionTest() {
 		Calculator calculator = new Calculator();
 		int div = calculator.divide(2, 1);
-		assertEquals(5, div);
+		assertEquals(2, div);
 	}
 
 }
