@@ -34,5 +34,11 @@ stage('Quality Gate') {
         }
     }
 }
+        stage('Checkout') {
+   			steps {
+       			checkout scm
+    		}
+		}
     }
+    
 }
