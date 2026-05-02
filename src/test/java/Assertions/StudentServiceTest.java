@@ -21,7 +21,7 @@ class StudentServiceTest {
 	//############################################################################
 	//##############################  assertTrue  ###############################
 	
-
+	//System.out.println("Test Conflit Volentaire : Hello from branch 0001");
 	@Test
 	public void getStudentsTest() throws SQLException {
 		
